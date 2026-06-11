@@ -40,6 +40,7 @@ export default function Header() {
   };
 
   // ── Config state (the screen derives from these) ────────────────
+  
   const [mode, setMode] = useState("classic");   // which text set: classic / geo / trending
   const [type, setType] = useState("timed");     // end rule: words (finish text) or timed (clock)
   const [time, setTime] = useState(30);          // chosen duration in seconds (timed mode)
@@ -56,6 +57,7 @@ export default function Header() {
   const [pos, setPos] = useState(0);             // caret position
   const [stats, setStats] = useState({ wpm: 0, acc: 100, err: 0 });
   const [overlay, setOverlay] = useState(true);  // the "click to type" cover
+  const typedWords = TARGET.slice(0, pos).trim().split(/\s+/).filter(Boolean).length;
 
   const textFor = (m, o) => TEXTS[m][variantKey(o)]; // helper: text for a mode + options
 
@@ -304,6 +306,11 @@ export default function Header() {
         <div className="flex items-center justify-between flex-wrap gap-3 mb-5">
           <div className="flex items-center gap-2.5 font-mono text-sm text-[#FF4F2E]">
             <span className="w-2 h-2 rounded-full bg-[#FF4F2E] animate-pulse" /> {mode}
+            {status === "running" && (
+              <div className="font-mono text-[13px] text-neutral-500">
+                {typedWords} {typedWords === 1 ? "word" : "words"}
+              </div>
+            )} 
           </div>
           <div className="flex gap-5 font-mono text-sm text-neutral-500">
             {type === "timed" && <span className="text-[#FF4F2E] font-medium">{timeLeft ?? time}s</span>}
@@ -311,6 +318,15 @@ export default function Header() {
             <span><span className="text-emerald-400 font-medium">{stats.acc}</span>% acc</span>
             <span><span className="text-white font-medium">{stats.err}</span> err</span>
           </div>
+                    {status === "running" && (
+            <button
+              onClick={() => { finish(); }}
+              className="font-mono text-[13px] font-bold bg-[#FF4F2E] text-black rounded-lg px-5 py-2.5
+                        hover:brightness-110 transition shadow-[0_0_30px_-6px_rgba(255,79,46,0.7)]"
+            >
+              Finish ✓
+            </button>
+          )}
         </div>
 
         {/* ── the terminal ── */}
