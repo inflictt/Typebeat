@@ -1,8 +1,8 @@
 export default function Footer() {
   const cols = [
-    ["Product", ["Modes", "Library", "Leaderboards", "Dashboard"]],
-    ["Company", ["About", "Contact", "Roadmap", "Blog"]],
-    ["Community", ["Discord", "Top learners", "Suggest a topic", "GitHub"]],
+    ["Product", ["Modes", "Leaderboards", "Dashboard"]],
+    ["Company", ["About", "Contact",]],
+    // ["Community", ["Discord", "Top learners", "Suggest a topic", "GitHub"]],
   ];
   return (
     <footer className="border-t border-white/10 py-16 px-6">
@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="grid place-items-center w-7 h-7 rounded-lg bg-gradient-to-br from-[#FF4F2E] to-[#FF9A3D]"><span className="w-2 h-2 rounded-sm bg-[#120b09]" /></span>
               Typebeat
             </a>
-            <p className="text-[15px] text-neutral-400 max-w-[280px] leading-relaxed">Improve your typing speed while learning geography, music and more. Every test makes you faster and smarter.</p>
+            <p className="text-[15px] text-neutral-400 max-w-[280px] leading-relaxed">Improve your typing speed while learning geography, trending and more. Every test makes you faster and smarter.</p>
           </div>
           {cols.map(([h, items]) => (
             <div key={h}>
@@ -25,8 +25,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="flex items-center justify-between flex-wrap gap-3 pt-7 border-t border-white/10 font-mono text-[12.5px] text-neutral-600">
-          <div>© 2026 Typebeat — learn while you type.</div>
-          <div>type faster · know more</div>
+          <div>© 2026 Typebeat — Saksham Lodha</div>
         </div>
       </div>
     </footer>

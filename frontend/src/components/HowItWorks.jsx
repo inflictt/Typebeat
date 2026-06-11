@@ -8,7 +8,6 @@ export default function HowItWorks() {
     <section id="how" className="pb-28 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="font-mono text-[12px] tracking-[0.2em] uppercase text-neutral-500 mb-5"><span className="text-[#FF4F2E]">02</span> — how it works</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-white">Three steps to your <span className="italic text-[#FF4F2E]">fastest verse.</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

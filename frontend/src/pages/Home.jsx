@@ -16,15 +16,15 @@ export default function Home() {
     <div className="bg-[#0d0c0b] text-[#ECE7E1] min-h-screen antialiased overflow-x-hidden">
       <Navbar />
       <Header />
-      <TopicStrip />
-      <Modes />
-      <HowItWorks />
-      <Benefits />
-      <Library />
-      <Leaderboards />
-      <StatsBand />
-      <Roadmap />
-      <CTA />
+      {/* <TopicStrip /> */}
+      {/* <Modes /> */}
+      {/* <HowItWorks /> */}
+      {/* <Benefits /> */}
+      {/* <Library /> */}
+      {/* <Leaderboards /> */}
+      {/* <StatsBand /> */}
+      {/* <Roadmap /> */}
+      {/* <CTA /> */}
       <Footer />
     </div>
   );

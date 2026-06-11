@@ -12,7 +12,6 @@ export default function Leaderboards() {
     <section id="leaderboards" className="pb-28 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-12">
-          <div className="font-mono text-[12px] tracking-[0.2em] uppercase text-neutral-500 mb-5"><span className="text-[#FF4F2E]">05</span> — leaderboards</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-white">Race for speed. <span className="italic text-[#FF4F2E]">Rank for knowledge.</span></h2>
         </div>
 

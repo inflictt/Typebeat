@@ -8,7 +8,6 @@ export default function Roadmap() {
     <section id="roadmap" className="py-28 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-14">
-          <div className="font-mono text-[12px] tracking-[0.2em] uppercase text-neutral-500 mb-5"><span className="text-[#FF4F2E]">06</span> — what's next</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-white">Where Typebeat is <span className="italic text-[#FF4F2E]">headed.</span></h2>
           <p className="text-neutral-400 text-lg mt-5">We're just getting started. Here's what's on the workbench.</p>
         </div>

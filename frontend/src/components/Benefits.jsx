@@ -9,7 +9,6 @@ export default function Benefits() {
     <section className="pb-28 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-14">
-          <div className="font-mono text-[12px] tracking-[0.2em] uppercase text-neutral-500 mb-5"><span className="text-[#FF4F2E]">03</span> — the idea</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-white leading-tight">Every minute of practice<br />should make you <span className="italic text-[#FF4F2E]">smarter.</span></h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">

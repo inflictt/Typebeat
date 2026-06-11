@@ -3,7 +3,6 @@ export default function Modes() {
     <section id="modes" className="py-28 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="font-mono text-[12px] tracking-[0.2em] uppercase text-neutral-500 mb-5"><span className="text-[#FF4F2E]">01</span> — three ways to type</div>
           <h2 className="font-serif text-4xl sm:text-5xl text-white">One clean engine. <span className="italic text-[#FF4F2E]">Three modes.</span></h2>
         </div>
 
